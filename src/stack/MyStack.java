@@ -34,10 +34,19 @@ public class MyStack {
 
     int[] newArr = new int[elements.length - 1];
     int newArrLength = newArr.length;
-    for (int i = 0; i <newArrLength; i++) {
+    for (int i = 0; i < newArrLength; i++) {
       newArr[i] = elements[i];
     }
     elements = newArr;
     System.out.println(Arrays.toString(elements));
+  }
+
+  /**
+   * 查看栈顶元素
+   *
+   * @return
+   */
+  public int peek() {
+    return elements[elements.length - 1];
   }
 }
