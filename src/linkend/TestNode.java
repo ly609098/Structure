@@ -8,14 +8,17 @@ public class TestNode {
     //追加节点
     n1.append(n2);
     n1.append(n3);
-    n1.append(new Node(4));
+
    /* System.out.println(n1.next().next().next().getData());
     System.out.println(n2.next().getData());
     System.out.println(n3.next().getData());
     System.out.println(n3.isLast());*/
     n1.show();
     System.out.println();
-    n2.removeNode();
+    //n2.removeNode();
+    n3.after(new Node(10));
     n2.show();
+    System.out.println();
+    n1.show();
   }
 }

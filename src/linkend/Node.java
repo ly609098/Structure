@@ -70,8 +70,14 @@ public class Node {
     }
   }
 
+  /** 删除节点 */
   public void removeNode() {
     Node currentNode = this.next.next;
     this.next = currentNode;
+  }
+
+  public void after(Node node) {
+    node.next = this.next;
+    this.next = node;
   }
 }
